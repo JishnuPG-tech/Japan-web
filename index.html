@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f2e9">
+  <meta name="description" content="Discover the quieter side of Japan. Explore handmade 3D landscapes, sacred mountains, timeless temples, and bamboo groves through the seasons.">
+  <title>Komorebi — A little closer to Japan</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body data-season="spring">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Komorebi home"><span class="brand-mark" aria-hidden="true">木</span><span>komorebi<span class="brand-sub">JAPAN, IN A DIFFERENT LIGHT</span></span></a>
+    <nav aria-label="Main navigation"><a href="#places">Destinations</a><a href="#seasons">The seasons</a><a href="#fieldnotes">Our philosophy</a></nav>
+    <a class="header-cta" href="#places">Find your somewhere <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-sun" aria-hidden="true"></span> A SLOWER KIND OF DISCOVERY</p>
+        <h1 id="hero-title">Somewhere<br>between wonder<br>and <em>stillness.</em></h1>
+        <p class="hero-description">Beyond the everyday, a different Japan awaits.<br class="desktop-break"> Step into a world of sacred peaks, quiet forests,<br class="desktop-break"> and moments that stay with you.</p>
+        <a class="button primary" href="#places">Begin your journey <span aria-hidden="true">↗</span></a>
+        <div class="hero-footnote"><span class="fine-line"></span> No itinerary. Just a little curiosity.</div>
+      </div>
+      <div class="landscape" id="landscape" data-destination="fuji">
+        <div class="scene-halo" aria-hidden="true"></div>
+        <span class="vertical-kanji" aria-hidden="true" lang="ja">一期一会</span>
+        <span class="scene-sun" aria-hidden="true"></span>
+        <svg class="scene-fallback" viewBox="0 0 800 650" aria-hidden="true">
+          <defs><linearGradient id="mountain" x2="0.8" y2="1"><stop stop-color="#788b87"/><stop offset="1" stop-color="#b2beb0"/></linearGradient><linearGradient id="lake" x2="0" y2="1"><stop stop-color="#8db9b0"/><stop offset="1" stop-color="#afc8b5"/></linearGradient></defs>
+          <ellipse cx="408" cy="551" rx="246" ry="34" fill="#294b3d" opacity=".08"/>
+          <path d="m127 415 262-100 291 109-34 80-248 47-237-66Z" fill="#7b8b6d"/>
+          <path d="m127 415 262-100 291 109-263 80Z" fill="#a5b899"/>
+          <path d="m201 435 191-63 209 64-183 45Z" fill="url(#lake)"/>
+          <path d="m207 394 190-240 184 240Z" fill="url(#mountain)"/>
+          <path d="m338 229 59-75 62 81-34-12-27 18-27-19Z" fill="#f7f7ed"/>
+          <g fill="#6d5848"><path d="M200 410v-98h7v98zM552 429V315h8v114z"/></g>
+          <g fill="#e5abb8"><circle cx="204" cy="305" r="36"/><circle cx="177" cy="323" r="24"/><circle cx="231" cy="325" r="27"/><circle cx="555" cy="307" r="37"/><circle cx="525" cy="328" r="26"/><circle cx="584" cy="327" r="27"/></g>
+          <g fill="#b55843"><path d="M455 416v-80h9v80zm62 0v-80h9v80z"/><path d="M444 335h93v10h-93zm-5-17h104v12H439z"/></g>
+          <g fill="none" stroke="#e6eee3" stroke-width="2" opacity=".7"><path d="m321 436 56 13 67-16M352 454l40 9 48-12"/></g>
+        </svg>
+        <div id="scene" role="group" aria-label="Interactive 3D Japanese landscape" aria-describedby="scene-help" tabindex="0"></div>
+        <div class="scene-topline"><span class="live-dot"></span><span id="scene-status" role="status">Preparing your little world…</span></div>
+        <div class="scene-tools" aria-label="Landscape controls">
+          <button class="icon-button" id="light-toggle" aria-label="Switch to moonlight" aria-pressed="false" title="Toggle day and night"><span aria-hidden="true">☾</span></button>
+          <button class="icon-button" id="motion-toggle" aria-label="Pause animation" aria-pressed="false" title="Pause animation"><span aria-hidden="true">Ⅱ</span></button>
+          <button class="icon-button" id="reset-view" aria-label="Reset camera view" title="Reset view"><span aria-hidden="true">↺</span></button>
+        </div>
+        <div class="scene-location"><div><span class="eyebrow" id="location-region">YAMANASHI · SHIZUOKA</span><h2><span id="location-name">Mount Fuji</span> <span id="location-japanese" lang="ja">富士山</span></h2></div><span class="location-index"><span id="location-number">01</span> / 03</span></div>
+        <p class="scene-help" id="scene-help">Drag to explore · Arrow keys to rotate · + / − to zoom</p>
+      </div>
+      <div class="hero-bottom"><span><span class="small-star" aria-hidden="true">✳</span> MADE FOR THE WANDERER IN YOU</span><a href="#places">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="season-strip" id="seasons" aria-labelledby="season-title">
+      <div><p class="eyebrow" id="season-title">ONE PLACE. FOUR DIFFERENT WORLDS.</p><p class="season-caption" id="season-caption">A fleeting world in bloom.</p></div>
+      <div class="season-options" role="group" aria-label="Choose a season">
+        <button data-season="spring" aria-pressed="true"><span lang="ja">春</span> Spring <i></i></button>
+        <button data-season="summer" aria-pressed="false"><span lang="ja">夏</span> Summer <i></i></button>
+        <button data-season="autumn" aria-pressed="false"><span lang="ja">秋</span> Autumn <i></i></button>
+        <button data-season="winter" aria-pressed="false"><span lang="ja">冬</span> Winter <i></i></button>
+      </div>
+    </section>
+    <section class="destinations section-wrap" id="places" aria-labelledby="places-title">
+      <div class="section-heading"><div><p class="eyebrow">FOLLOW YOUR CURIOSITY</p><h2 id="places-title">Small escapes. <em>Lasting impressions.</em></h2></div><p>Three places to get a little lost.<br>A thousand reasons to linger.</p></div>
+      <div class="destination-grid">
+        <button class="destination-card" data-destination="fuji" aria-pressed="true" aria-label="Explore Mount Fuji in 3D">
+          <div class="card-art fuji-art"><span class="card-badge">THE SACRED MOUNTAIN</span><svg viewBox="0 0 400 270" aria-hidden="true"><circle cx="286" cy="90" r="38" fill="#dba18e"/><path d="M0 198q65-54 125-22t132 2 143-19v111H0" fill="#afba9e"/><path d="m57 226 138-172 145 172" fill="#80948b"/><path d="m153 106 42-52 47 57-26-8-19 12-20-17Z" fill="#f5f3e9"/><path d="M0 230q95-29 204 0t196-6v46H0" fill="#87b0a8"/><path d="m112 247 87 9 61-8" fill="none" stroke="#dde2cf"/><path d="M17 245V120m0 60 36-35" stroke="#705e50" stroke-width="7"/><g fill="#e6b1b9"><circle cx="25" cy="118" r="38"/><circle cx="58" cy="137" r="27"/><circle cx="7" cy="149" r="30"/></g></svg><span class="card-arrow" aria-hidden="true">↗</span></div>
+          <div class="card-info"><div><span class="card-region">YAMANASHI · SHIZUOKA</span><h3>Mount Fuji <span lang="ja">富士山</span></h3></div><span class="card-number">01</span></div><p>Where the earth meets the extraordinary.</p>
+        </button>
+        <button class="destination-card" data-destination="kyoto" aria-pressed="false" aria-label="Explore Kyoto in 3D">
+          <div class="card-art kyoto-art"><span class="card-badge">ECHOES OF OLD JAPAN</span><svg viewBox="0 0 400 270" aria-hidden="true"><circle cx="304" cy="77" r="35" fill="#e3b079"/><path d="M0 193q80-120 160-45t240-20v142H0" fill="#9aab8c"/><path d="M0 230q120-44 230-20t170-26v86H0" fill="#70886b"/><path d="m185 270 15-107 20 0 45 107" fill="#c9b58e"/><g fill="#b95843"><path d="M103 245V91h12v154zm179 0V91h12v154zM88 113h220v13H88zM82 84h232v16H82z"/><path d="M151 234V143h8v91zm89 0v-91h8v91zM140 137h120v10H140zM145 158h110v8H145z"/></g><path d="M76 77q121 15 244 0l-5 10H82Z" fill="#3c5148"/><g fill="#d49a79"><circle cx="18" cy="130" r="53"/><circle cx="379" cy="164" r="43"/></g></svg><span class="card-arrow" aria-hidden="true">↗</span></div>
+          <div class="card-info"><div><span class="card-region">KANSAI REGION</span><h3>Kyoto <span lang="ja">京都</span></h3></div><span class="card-number">02</span></div><p>A thousand years, quietly unfolding.</p>
+        </button>
+        <button class="destination-card" data-destination="arashiyama" aria-pressed="false" aria-label="Explore Arashiyama in 3D">
+          <div class="card-art bamboo-art"><span class="card-badge">INTO THE GREEN</span><svg viewBox="0 0 400 270" aria-hidden="true"><circle cx="213" cy="102" r="66" fill="#d0d6b0"/><path d="m157 270 46-160 13 0 71 160" fill="#d4c9a4"/><g stroke="#6d8d65" stroke-width="12"><path d="M25 270 38 0M72 270 64 0M117 270 127 0M301 270 285 0M346 270 355 0M389 270 382 0"/></g><g stroke="#a3b48c" stroke-width="4"><path d="M20 65h20m23 34h17m36-41h20m153 19h18m45 50h20m7-63h20M20 171h20m23 35h17m36-54h20m153 42h18m45 38h20m7-64h20"/></g><g fill="#557951"><ellipse cx="90" cy="55" rx="41" ry="8" transform="rotate(28 90 55)"/><ellipse cx="143" cy="89" rx="42" ry="8" transform="rotate(-32 143 89)"/><ellipse cx="280" cy="112" rx="44" ry="8" transform="rotate(30 280 112)"/><ellipse cx="334" cy="32" rx="46" ry="9" transform="rotate(-25 334 32)"/><ellipse cx="44" cy="153" rx="43" ry="8" transform="rotate(-35 44 153)"/></g></svg><span class="card-arrow" aria-hidden="true">↗</span></div>
+          <div class="card-info"><div><span class="card-region">WESTERN KYOTO</span><h3>Arashiyama <span lang="ja">嵐山</span></h3></div><span class="card-number">03</span></div><p>Let the forest do the talking.</p>
+        </button>
+      </div>
+      <div class="destination-detail" aria-live="polite"><span class="detail-symbol" aria-hidden="true">⌁</span><p id="destination-description">A snow-capped silhouette. A lake without a ripple. Find a moment of stillness at Japan’s most iconic mountain.</p><span class="coordinates" id="coordinates">35.3606° N / 138.7274° E</span></div>
+    </section>
+    <section class="philosophy section-wrap" id="fieldnotes" aria-labelledby="philosophy-title"><div class="word-art" lang="ja" aria-hidden="true">木漏れ日<span>ko · mo · re · bi</span></div><div><p class="eyebrow">A WORD. A FEELING. A WAY TO WANDER.</p><h2 id="philosophy-title">Sunlight, filtered<br><em>through the leaves.</em></h2><p>There’s a Japanese word for the light that slips through a forest canopy. Not quite sunlight. Not quite shadow. Something beautiful in between.</p><p>That’s the feeling we’re here for. A small invitation to slow down, look a little closer, and find the extraordinary in the quiet.</p><span class="editorial-note">An interactive love letter to Japan.</span></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">木</span> komorebi</a><p>A little closer to nature. A little closer to yourself.</p><a href="#home">BACK TO STILLNESS ↑</a></footer>
+  <noscript><div class="noscript-message">Enjoy the illustrated journey. Enable JavaScript for interactive 3D landscapes and seasonal controls.</div></noscript>
+</body>
+</html>
